@@ -1,5 +1,6 @@
 import { Table } from '../Table'
 import { BenefitsCard } from '../BenefitsCard'
+import { PlanCard } from '../PlanCard'
 import './MainPage.css'
 
 function MainPage () {
@@ -68,14 +69,14 @@ function MainPage () {
                     }
                 </div>
             </section>
-            <section>
+            <section className='plan-info'>
                 <div className='plan-info-container'>
                     <div className='text-plan-info-container'>
-                        <h2></h2>
-                        <p></p>
+                        <h2>Escoge el plan que mejor se ajuste a ti.</h2>
+                        <p>Cualquier plan te da acceso completo a nuestra plataforma.</p>
                     </div>
                     <div className='plan-card-container'>
-
+                        <PlanCard />
                     </div>
                 </div>
             </section>
