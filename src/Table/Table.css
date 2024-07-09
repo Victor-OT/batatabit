@@ -1,0 +1,52 @@
+:root {
+    --bitcoin-orange: #f7931a;
+    --soft-orange: #ffe9d5;
+    --secondary-blue: #1a9af7;
+    --soft-blue: #e7f5ff;
+    --warm-black: #282623;
+    --black: #201e1c;
+    --grey: #bababa;
+    --off-white: #faf8f7;
+    --just-white: #fff;
+}
+
+.table-container h2 {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: start;
+    margin-left: 12px;
+    color: #FF9536;
+}
+
+.table {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 190px;
+    height: 159px;
+    background: var(--just-white);
+    border-radius: 8px;
+}
+
+.cell-col-1 {
+    border-right: solid 1px var(--off-white);
+    border-bottom: solid 1px var(--off-white);
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 500px;
+    color: #B5B0AC;
+    text-align: start;
+    margin-left: 16px;
+    margin-top: 12px;
+}
+
+.cell-col-2 {
+    border-left: solid 1px var(--off-white);
+    border-bottom: solid 1px var(--off-white);
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    font-weight: 400px;
+    color: #757575;
+    text-align: center;
+    margin-top: 12px;
+}
