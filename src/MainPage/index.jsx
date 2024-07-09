@@ -1,6 +1,32 @@
 import { Table } from '../Table'
+import { BenefitsCard } from '../BenefitsCard'
 import './MainPage.css'
+
 function MainPage () {
+
+    const benefitsCardInfo = [
+        {
+            icon: '../../assets/icons/clock.svg',
+            h2: 'Tiempo real',
+            p: 'Nuestra API toma información minuto a minuto sobre las tasas que más determinan el comportamiento.'
+        },
+        {
+            icon: '../../assets/icons/eye.svg',
+            h2: 'No hay tasas escondidas',
+            p: 'Ni en la compra o al momento de exit, Batabit siempre te muestra el costo real de lo que estás adquiriendo.'
+        },
+        {
+            icon: '../../assets/icons/dollar-sign.svg',
+            h2: 'Compara monedas',
+            p: 'Ni en la compra o al momento de exit, Batabit siempre te muestra el costo real de lo que estás adquiriendo.'
+        },
+        {
+            icon: '../../assets/icons/check-circle.svg',
+            h2: 'Información confiable',
+            p: 'Nuestras fuentes están 100% verificadas y continuamos auditando su contenido mientras se actualizan.'
+        }
+    ]
+
     return (
         <div>
             <header>
@@ -24,6 +50,34 @@ function MainPage () {
                 <section className='table-container'>
                     <Table />
                 </section>
+            </section>
+            <section className='benefits'>
+                <div className='benefits-text-container'>
+                    <h2>Creamos un producto sin comparación.</h2>
+                    <p>Confiable y diseñado para su uso diario.</p>
+                </div>
+                <div  className='benefits-card-container'>
+                    {
+                        benefitsCardInfo.map(card => (
+                            <BenefitsCard 
+                            key={benefitsCardInfo.indexOf(card)}
+                            icon={card.icon}
+                            h2={card.h2}
+                            p={card.p}/>
+                        ))
+                    }
+                </div>
+            </section>
+            <section>
+                <div className='plan-info-container'>
+                    <div className='text-plan-info-container'>
+                        <h2></h2>
+                        <p></p>
+                    </div>
+                    <div className='plan-card-container'>
+
+                    </div>
+                </div>
             </section>
         </div>
     )
