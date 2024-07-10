@@ -1,9 +1,15 @@
+import { useRef } from 'react'
 import { Table } from '../Table'
 import { BenefitsCard } from '../BenefitsCard'
 import { PlanCard } from '../PlanCard'
 import './MainPage.css'
 
 function MainPage () {
+
+    const sectionRef = useRef(null)
+    const handleScroll = () => {
+        sectionRef.current.scrollIntoView({behavior: 'smooth'})
+    }
 
     const benefitsCardInfo = [
         {
@@ -57,7 +63,8 @@ function MainPage () {
                     <h1>La próxima revolución en el intercambio de criptomonedas.</h1>         
                     <p>Batatabit te ayuda a navegar entre los diferentes precios y tendencias.</p> 
                 </div>  
-                <button>Conoce Nuestros Planes <span><img src="../../assets/icons/down-arrow.svg" alt="" /></span></button>      
+                <button
+                onClick={() => handleScroll()}>Conoce Nuestros Planes <span><img src="../../assets/icons/down-arrow.svg" alt="" /></span></button>      
             </header>
             <section className='features-container'>
                 <img src="../../assets/img/Bitcoin.svg" alt="bitcoin" />
@@ -90,7 +97,7 @@ function MainPage () {
                     }
                 </div>
             </section>
-            <section className='plan-info'>
+            <section className='plan-info' ref={sectionRef}>
                 <div className='plan-info-container'>
                     <div className='text-plan-info-container'>
                         <h2>Escoge el plan que mejor se ajuste a ti.</h2>
