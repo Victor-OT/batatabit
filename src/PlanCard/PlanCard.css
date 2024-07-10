@@ -17,11 +17,11 @@
     background: var(--just-white);
     box-shadow: 0px 4px 8px 0px #59491E29;
     border-radius: 10px;
-    width: 100%;
+    width: 190px;
     height: 247px;
-    margin-bottom: 20px;
     padding: 20px;
     position: relative;
+    scroll-snap-align: center;
 }
 
 .plan-card .recomended {

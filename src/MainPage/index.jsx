@@ -30,16 +30,16 @@ function MainPage () {
 
     const plansInfo = [
         {
-            title: 'Pago Anual',
-            price: 99,
-            description: '*Ahorras $129 comparado al plan mensual.',
-            recomended: true
-        },
-        {
             title: 'Pago Mensual',
             price: 109,
             description: '*Ahorras $129 comparado al pago semanal.',
             recomended: false
+        },
+        {
+            title: 'Pago Anual',
+            price: 99,
+            description: '*Ahorras $129 comparado al plan mensual.',
+            recomended: true
         },
         {
             title: 'semanal',
