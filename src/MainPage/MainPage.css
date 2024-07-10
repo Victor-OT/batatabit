@@ -65,6 +65,10 @@ header button {
     box-shadow: 2px 2px 4px rgba(89, 73, 30, 0.16);
 }
 
+header button:hover {
+    cursor: pointer;
+}
+
 span img {
     width: 12px;
     height: 7px;
