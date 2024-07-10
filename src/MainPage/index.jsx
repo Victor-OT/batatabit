@@ -44,7 +44,7 @@ function MainPage () {
         {
             title: 'semanal',
             price: 30,
-            description: '*Precio más elevado en comparación a otros planes.',
+            description: '*Precio más elevado de todos.',
             recomended: false
         }
     ]
@@ -96,21 +96,35 @@ function MainPage () {
                         <h2>Escoge el plan que mejor se ajuste a ti.</h2>
                         <p>Cualquier plan te da acceso completo a nuestra plataforma.</p>
                     </div>
-                    <div className='plan-card-container'>
-                        {
-                            plansInfo.map(card => (
-                                <PlanCard 
-                                key={plansInfo.indexOf(card)}
-                                title={card.title}
-                                price={card.price}
-                                description={card.description}
-                                recomended={card.recomended}
-                                />
-                            ))
-                        }
+                    <div className='outer-card-container'>
+                        <div className='plan-card-container'>
+                            {
+                                plansInfo.map(card => (
+                                    <PlanCard 
+                                    key={plansInfo.indexOf(card)}
+                                    title={card.title}
+                                    price={card.price}
+                                    description={card.description}
+                                    recomended={card.recomended}
+                                    />
+                                ))
+                            }
+                        </div>
                     </div>
                 </div>
             </section>
+            <footer>
+                <section className='social-media'>
+                    <ul>
+                        <li>Linkedin</li>
+                        <li>Crunchbase</li>
+                        <li>Hackernews</li>
+                    </ul>
+                </section>
+                <section className='logo-footer'>
+                    <img src="../../assets/img/logo-footer.svg" alt="logo-footer" />
+                </section>
+            </footer>
         </div>
     )
 
