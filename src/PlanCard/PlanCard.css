@@ -10,79 +10,87 @@
     --just-white: #fff;
 }
 
-.plan-card-container {
-    width: 190px;
-    height: 247px;
+.plan-card {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    text-align: center;
-    position: relative;
     background: var(--just-white);
     box-shadow: 0px 4px 8px 0px #59491E29;
     border-radius: 10px;
+    width: 100%;
+    height: 247px;
+    margin-bottom: 20px;
+    padding: 20px;
     position: relative;
 }
 
-.plan-card-container span {
+.plan-card .recomended {
+    background: var(--bitcoin-orange);
     width: 102px;
     height: 32px;
-    position: absolute;
-    bottom: 230px;
-    background: var(--bitcoin-orange);
     border-radius: 8px;
-    font-family: "Inter", sans-serif;
+    font-family: 'Intern', sans-serif;
     font-size: 12px;
     font-weight: bold;
-    line-height: 14.52px;
     color: var(--just-white);
-    padding-top: 8px;
+    padding-top: 10px;
+    position: absolute;
+    bottom: 230px;
 }
 
-.plan-card-container h2 {
+.plan-card .hidden {
+    display: none;
+}
+
+.plan-card h2 {
+    font-weight: 600;
     font-size: 14px;
-    font-weight: 500;
     line-height: 18px;
-    margin-top: 12px;
+    margin-top: 10px;
 }
 
-.price-container {
+.plan-card .price-container {
     display: flex;
 }
 
-.price-container .dollar-sign {
-    font-family: "Inter", sans-serif;
+.dollar-sign {
+    font-family: 'Intern', sans-serif;
     font-size: 12px;
     font-weight: 600;
+    color: var(--warm-black);
     position: absolute;
-    left: 50px;
     top: 70px;
+    left: 55px;
 }
 
 .price-container .price {
-    font-family: "Inter", sans-serif;
+    font-family: 'Intern', sans-serif;
     font-size: 52px;
-    font-weight: 700;
-    margin: 8px auto 10px auto;
+    font-weight: bold;
+    color: var(--warm-black);
+    letter-spacing: -4px;
+    margin-top: 10px;
+    position: relative;
 }
 
-.plan-card-container .description {
-    font-family: "Inter", sans-serif;
+.plan-card .description {
+    font-family: 'Intern', sans-serif;
     font-size: 12px;
     font-weight: 500;
     line-height: 14.52px;
     color: #757575;
+    margin-top: 10px;
 }
 
-.plan-card-container button {
+.plan-card button {
     width: 151px;
     height: 48px;
-    margin-top: 20px;
-    border: 2px solid var(--bitcoin-orange);
-    border-radius: 4px;
-    font-size: 14px;
+    border: solid 2px var(--bitcoin-orange);
+    border-radius: 8px;
+    margin-top: 14px;
+    font-family: 'DM Sans', sans-serif;
     font-weight: bold;
+    font-size: 14px;
     line-height: 18.23px;
-    color: var(--warm-black);
 }
+

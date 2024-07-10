@@ -28,6 +28,27 @@ function MainPage () {
         }
     ]
 
+    const plansInfo = [
+        {
+            title: 'Pago Anual',
+            price: 99,
+            description: '*Ahorras $129 comparado al plan mensual.',
+            recomended: true
+        },
+        {
+            title: 'Pago Mensual',
+            price: 109,
+            description: '*Ahorras $129 comparado al pago semanal.',
+            recomended: false
+        },
+        {
+            title: 'semanal',
+            price: 30,
+            description: '*Precio más elevado en comparación a otros planes.',
+            recomended: false
+        }
+    ]
+
     return (
         <div>
             <header>
@@ -76,7 +97,17 @@ function MainPage () {
                         <p>Cualquier plan te da acceso completo a nuestra plataforma.</p>
                     </div>
                     <div className='plan-card-container'>
-                        <PlanCard />
+                        {
+                            plansInfo.map(card => (
+                                <PlanCard 
+                                key={plansInfo.indexOf(card)}
+                                title={card.title}
+                                price={card.price}
+                                description={card.description}
+                                recomended={card.recomended}
+                                />
+                            ))
+                        }
                     </div>
                 </div>
             </section>
