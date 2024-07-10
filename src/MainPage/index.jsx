@@ -13,22 +13,22 @@ function MainPage () {
 
     const benefitsCardInfo = [
         {
-            icon: '../../public/icons/clock.svg',
+            icon: '/icons/clock.svg',
             h2: 'Tiempo real',
             p: 'Nuestra API toma información minuto a minuto sobre las tasas que más determinan el comportamiento.'
         },
         {
-            icon: '../../public/icons/eye.svg',
+            icon: '/icons/eye.svg',
             h2: 'No hay tasas escondidas',
             p: 'Ni en la compra o al momento de exit, Batabit siempre te muestra el costo real de lo que estás adquiriendo.'
         },
         {
-            icon: '../../public/icons/dollar-sign.svg',
+            icon: '/icons/dollar-sign.svg',
             h2: 'Compara monedas',
             p: 'Ni en la compra o al momento de exit, Batabit siempre te muestra el costo real de lo que estás adquiriendo.'
         },
         {
-            icon: '../../public/icons/check-circle.svg',
+            icon: '/icons/check-circle.svg',
             h2: 'Información confiable',
             p: 'Nuestras fuentes están 100% verificadas y continuamos auditando su contenido mientras se actualizan.'
         }
@@ -58,7 +58,7 @@ function MainPage () {
     return (
         <div>
             <header>
-                <img src='../../public/img/logo.svg' alt='logo' />
+                <img src='/img/logo.svg' alt='logo' />
                 <div className='header-text-container'>
                     <h1>La próxima revolución en el intercambio de criptomonedas.</h1>         
                     <p>Batatabit te ayuda a navegar entre los diferentes precios y tendencias.</p> 
@@ -67,7 +67,7 @@ function MainPage () {
                 onClick={() => handleScroll()}>Conoce Nuestros Planes <span><img src="../../assets/icons/down-arrow.svg" alt="" /></span></button>      
             </header>
             <section className='features-container'>
-                <img src="../../public/img/Bitcoin.svg" alt="bitcoin" />
+                <img src="/img/Bitcoin.svg" alt="bitcoin" />
                 <div className='text-features-container'>
                     <h2>
                         Visibilizamos todas las tasas de cambio.
@@ -129,7 +129,7 @@ function MainPage () {
                     </ul>
                 </section>
                 <section className='logo-footer'>
-                    <img src="../../public/img/logo-footer.svg" alt="logo-footer" />
+                    <img src="/img/logo-footer.svg" alt="logo-footer" />
                 </section>
             </footer>
         </div>
