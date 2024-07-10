@@ -229,3 +229,13 @@ footer {
     margin-bottom: 8px;
 }
 
+@media (min-width: 900px ) {
+    .benefits-card-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 16px;
+    }
+     footer {
+        padding: 0 200px;
+     }
+}
