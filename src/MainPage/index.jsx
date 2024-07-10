@@ -64,7 +64,7 @@ function MainPage () {
                     <p>Batatabit te ayuda a navegar entre los diferentes precios y tendencias.</p> 
                 </div>  
                 <button
-                onClick={() => handleScroll()}>Conoce Nuestros Planes <span><img src="../../assets/icons/down-arrow.svg" alt="" /></span></button>      
+                onClick={() => handleScroll()}>Conoce Nuestros Planes <span><img src="/icons/down-arrow.svg" alt="" /></span></button>      
             </header>
             <section className='features-container'>
                 <img src="/img/Bitcoin.svg" alt="bitcoin" />
